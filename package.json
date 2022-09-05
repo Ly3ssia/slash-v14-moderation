@@ -4,7 +4,7 @@
   "description": "Discord.JS v14 Slash Uyumlu Altyapı",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "start": "node index.js"
   },
   "author": "",
   "license": "MIT",
@@ -17,5 +17,8 @@
     "moment-duration-format": "^2.3.2",
     "os": "^0.1.2",
     "request": "^2.88.2"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
