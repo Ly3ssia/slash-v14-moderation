@@ -16,7 +16,7 @@ const client = new Client({
 
 module.exports = async (client) => {
 
-  const rest = new REST({ version: "10" }).setToken(TOKEN);
+  const rest = new REST({ version: "10" }).setToken(TOKEN || process.env.token);
   try {
     await rest.put(Routes.applicationCommands(client.user.id), {
       body: client.commands,
